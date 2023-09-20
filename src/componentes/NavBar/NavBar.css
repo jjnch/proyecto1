@@ -1,0 +1,32 @@
+/* Estilo para la franja subrayada al pasar el mouse */
+.nav-link {
+    position: relative; /* Añade posición relativa al elemento */
+    text-decoration: none; /* Elimina el subrayado por defecto del texto */
+}
+
+.nav-link::before, .nav-link::after {
+    content: ""; /* Agrega contenido pseudo-elemento */
+    display: block; /* Convierte el pseudo-elemento en un bloque */
+    position: absolute; /* Posición absoluta en relación al elemento padre */
+    bottom: 5px; /* Ubica el pseudo-elemento en la parte inferior */
+    width: 50%; /* Ancho del pseudo-elemento al 50% del elemento padre */
+    height: 3px; /* Altura de la franja de 3px */
+    background-color: rgb(255, 165, 87); /* Color de la franja */
+    transform: scaleX(0); /* Escala la franja horizontalmente a 0 */
+    transform-origin: bottom left; /* Establece el punto de transformación en la esquina inferior izquierda */
+    transition: transform 0.3s; /* Agrega una transición suave */
+}
+
+.nav-link::before {
+    left: 0%; /* Inicio de la franja izquierda */
+    transform-origin: bottom right; /* Establece el punto de transformación en la esquina inferior derecha */
+}
+
+.nav-link::after {
+    right: 0%; /* Inicio de la franja derecha */
+    transform-origin: bottom left; /* Establece el punto de transformación en la esquina inferior izquierda */
+}
+
+.nav-link:hover::before, .nav-link:hover::after {
+    transform: scaleX(1); /* Escala la franja horizontalmente al 100% al pasar el mouse */
+}

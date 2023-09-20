@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Title = ( {nombre, edad} ) => {
+export const Contenido = ( {nombre, edad} ) => {
     return (
         <>
             <h2>Hola { nombre }</h2>
@@ -9,4 +9,4 @@ export const Title = ( {nombre, edad} ) => {
     )
 }
 
-export default Title;
+export default Contenido;

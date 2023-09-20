@@ -1,6 +1,6 @@
 import './App.css';
 import NavBar from './componentes/NavBar';
-import Title from './componentes/Title';
+import Contenido from './componentes/Contenido';
 import Contador from './componentes/Contador';
 import Footer from './componentes/Footer';
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <Title nombre = 'Juan' edad='47'/>
+      <Contenido nombre = 'Juan' edad='47'/>
       <Contador />
       <Footer />
       
