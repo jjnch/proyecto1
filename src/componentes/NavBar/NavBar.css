@@ -30,3 +30,9 @@
 .nav-link:hover::before, .nav-link:hover::after {
     transform: scaleX(1); /* Escala la franja horizontalmente al 100% al pasar el mouse */
 }
+
+.navbar-nav .nav-item {
+    margin-right: 30px; /* Agregar un margen derecho entre las opciones */
+}
+
+@import "~font-awesome/css/font-awesome.css";
