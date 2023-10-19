@@ -23,13 +23,19 @@ export const NavBar = () => {
                     <div className="col-1">
                         <a className="navbar-brand" href="#">My Chao</a>
                     </div>
-                    <div className="col-10">
+                    <div className="col-9">
                         <input type="text" className="form-control" placeholder="Buscar palabras" />
                     </div>
                     <div className="col-1 text-center">
                         <a href="#" style={{ textDecoration: 'none', color: 'black'}} >
                             <i className="fa fa-user"></i>
                             <div style={{ fontSize: '10px', margin: -3}}>Iniciar Sesión</div>
+                        </a>
+                    </div>
+                    <div className="col-1 text-center">
+                        <a href="#" style={{ textDecoration: 'none', color: 'black'}} >
+                            <i className="fa fa-user"></i>
+                            <div style={{ fontSize: '10px', margin: -3}}>Compras</div>
                         </a>
                     </div>
                 </div>
